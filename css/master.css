@@ -1,0 +1,41 @@
+input {
+  display: block;
+  border-color: black;
+}
+
+input.invalid {
+  border-color: red;
+  display: inline-block;
+}
+
+input.cc {
+  display: inline-block;
+  width: 40px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+fieldset {
+  width: 50%;
+}
+
+form {
+  margin: auto;
+}
+
+h1 {
+  margin: auto;
+}
+
+button {
+  margin: 10px 0;
+  display: block;
+}
+
+span {
+  color: red;
+  margin-left: 5px;
+}

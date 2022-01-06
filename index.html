@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./css/master.css">
+    <script src="./javascripts/validation.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <h1>Sign up Form</h1>
+    <form novalidate autocomplete="off">
+      <fieldset>
+        <label for="first">First Name</label>
+        <input type="text" name="first" value="" required>
+        <label for="last">Last Name</label>
+        <input type="text" name="last" value="" required>
+        <label for="email">Email</label>
+        <input type="email" name="email" pattern=".+@.+" value="" placeholder="someone@example.com" required>
+        <label for="password">Password</label>
+        <input type="password" name="password" value="" minlength="10" required>
+        <label for="phone">Phone Number</label>
+        <input type="text" name="phone" value="" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="111-222-333">
+        <label for="cc">Credit Card Number</label>
+        <input type="text" pattern="^\d{4}$" name="cc1" class="cc" maxlength="4">-
+        <input type="text" pattern="^\d{4}$" name="cc2" class="cc" maxlength="4">-
+        <input type="text" pattern="^\d{4}$" name="cc3" class="cc" maxlength="4">-
+        <input type="text" pattern="^\d{4}$" name="cc4" class="cc" maxlength="4">
+        <button type="submit" name="submit">Sign Up</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
